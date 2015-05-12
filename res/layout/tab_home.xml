@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_wrapper_bg" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/textStyle3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="22dp"
+                android:text="1. Contacts Blocking Mode" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="20dp" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:checked="true"
+                    style="@style/textStyle3"
+                    android:text="Block Single Contact" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    style="@style/textStyle3"
+                    android:text="Block All Contacts" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroup1"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minWidth="250dp"
+                android:padding="8dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textview2"
+                style="@style/textStyle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/edittext1"
+                android:layout_marginTop="29dp"
+                android:text="2. Set Number of hours" />
+
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edittext1"
+                android:layout_alignRight="@+id/edittext1"
+                android:layout_below="@+id/textview2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text"
+                android:inputType="number"
+                android:padding="8dp"
+                android:text="0" />
+            
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edittext2"
+                android:layout_alignRight="@+id/edittext2"
+                android:layout_below="@+id/edittext2"
+                android:layout_marginTop="41dp"
+                android:background="@drawable/button_design"
+                android:minWidth="200dp"
+                android:padding="8dp"
+                android:text="Save Setting"
+                android:textAlignment="inherit"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

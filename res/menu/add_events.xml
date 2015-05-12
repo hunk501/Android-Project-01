@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.valhala.AddEvents" >
+
+    <item 
+        android:id="@+id/action_cancel"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_revert"
+        android:title="@string/lbl_menu_cancel"/>
+    
+    <item 
+        android:id="@+id/action_save"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_save"
+        android:title="@string/lbl_menu_save"/>
+
+</menu>

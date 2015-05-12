@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_wrapper_bg" >
+	
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+		        android:id="@+id/lblPass"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="15dp"
+		        android:text="@string/lbl_alarm"
+		        style="@style/textStyle"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+            <RelativeLayout  
+                android:id="@+id/relativeLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblPass" >
+                
+                <TimePicker
+			        android:id="@+id/timePicker1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+			        android:background="@drawable/edit_text"
+			        android:layout_marginTop="14dp" />
+                
+            </RelativeLayout >
+			<TextView
+		        android:id="@+id/textView2"
+		        style="@style/alarmTime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/relativeLayout01"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="5dp"
+		        android:text="Time"
+		        android:visibility="gone"		        
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+            <TextView
+		        android:id="@+id/textView1"
+		        style="@style/textStyle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textView2"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/lbl_password"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+		    <EditText
+		        android:id="@+id/editText1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textView1"
+		        android:ems="10"
+		        android:layout_centerHorizontal="true"
+		        android:textColor="#333"
+		        android:background="@drawable/edit_text"
+		        android:padding="8dp"		      
+		        android:inputType="textPassword">
+		        <requestFocus />
+		    </EditText>
+		
+		    <Button
+		        android:id="@+id/button1"
+		        style="@style/textStyle2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/editText1"
+		        android:layout_alignRight="@+id/editText1"
+		        android:layout_below="@+id/editText1"
+		        android:layout_marginTop="19dp"
+		        android:layout_marginBottom="15dp"
+		        android:background="@drawable/button_design"
+		        android:text="@string/lbl_set_alarm" />
+	
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+</RelativeLayout>
